@@ -1,1 +1,12 @@
+# Git
 alias gl="git log --date='format-local:%Y/%m/%d %H:%M:%S' --pretty='format:%C(yellow)%H %C(green)%ad %C(reset)%s %C(red)%d'"
+alias help_rebase_onto='echo rebase --onto どこへ どこから どのブランチを'
+
+# AWS
+alias awsconf='cat ~/.aws/config | grep profile'
+
+# Docker
+alias dc='docker-compose'
+alias dcrun='docker-compose run --rm'
+alias dcexec='docker-compose exec'
+
