@@ -12,6 +12,7 @@ mas "CotEditor", id: 1024640650
 mas "Slack", id: 803453959
 mas "Magnet", id: 441258766
 
+cask "docker"
 cask "karabiner-elements"
 cask "discord"
 cask "istat-menus"
