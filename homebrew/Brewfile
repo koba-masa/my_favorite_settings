@@ -5,8 +5,6 @@ tap "homebrew/core"
 brew "mas"
 
 brew "git"
-brew "ruby-build"
-brew "rbenv"
 brew "awscli"
 
 mas "1Password 7", id: 1333542190
@@ -14,6 +12,7 @@ mas "CotEditor", id: 1024640650
 mas "Slack", id: 803453959
 mas "Magnet", id: 441258766
 
+cask "docker"
 cask "karabiner-elements"
 cask "discord"
 cask "istat-menus"
@@ -22,7 +21,6 @@ cask "visual-studio-code"
 cask "zoomus"
 cask "google-chrome"
 cask "amorphousdiskmark"
+cask "joplin"
 
-grooup :private do
-  brew "youtube-dl"
-end
+brew "youtube-dl"
