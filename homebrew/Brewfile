@@ -23,5 +23,6 @@ cask "google-chrome"
 cask "amorphousdiskmark"
 cask "aws-valut"
 cask "joplin"
+cask "direnv"
 
 brew "youtube-dl"
