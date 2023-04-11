@@ -21,6 +21,7 @@ cask "visual-studio-code"
 cask "zoomus"
 cask "google-chrome"
 cask "amorphousdiskmark"
+cask "aws-valut"
 cask "joplin"
 
 brew "youtube-dl"
