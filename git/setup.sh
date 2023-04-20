@@ -7,7 +7,12 @@ if [ $# -ne 0 ]; then
   option="${1}"
 fi
 
-git_message="${BASE_DIR}/global_settings/.gitmessage"
+global_settings="${BASE_DIR}/global_settings"
+
+git_ignore="${global_settings}/.gitignore"
+git config --global core.excludesFile ${git_ignore}
+
+git_message="${global_settings}/.gitmessage"
 if [ -e "${git_message}.${option}" ]; then
   git_message="${git_message}.${option}"
 fi
