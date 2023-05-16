@@ -12,4 +12,5 @@ alias awsconf='cat ~/.aws/config | grep profile'
 alias dc='docker-compose'
 alias dcrun='docker-compose run --rm'
 alias dcexec='docker-compose exec'
+alias dcm='docker-compose -f compose.yml -f compose.mine.yml'
 
