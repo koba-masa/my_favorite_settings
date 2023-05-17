@@ -1,16 +1,19 @@
-# Linux
-alias la="ls -la"
+# alias
+# alias <alias command>='<real command>'
 
-# Git
+## Linux
+alias la="ls -la"
+alias history='history -E 1'
+
+## Git
 alias gl="git log --date='format-local:%Y/%m/%d %H:%M:%S' --pretty='format:%C(yellow)%H %C(green)%ad %C(reset)%s %C(red)%d'"
 alias help_rebase_onto='echo rebase --onto どこへ どこから どのブランチを'
 
-# AWS
+## AWS
 alias awsconf='cat ~/.aws/config | grep profile'
 
-# Docker
+## Docker
 alias dc='docker-compose'
+alias dcm='docker-compose -f compose.yml -f compose.mine.yml'
 alias dcrun='docker-compose run --rm'
 alias dcexec='docker-compose exec'
-alias dcm='docker-compose -f compose.yml -f compose.mine.yml'
-
