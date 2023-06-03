@@ -1,0 +1,4 @@
+{
+  "solargraph.useBundler": true,
+  "solargraph.bundlerPath": "/usr/local/bin/bundler"
+}
