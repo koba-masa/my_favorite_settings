@@ -10,6 +10,9 @@ fi
 global_settings="${BASE_DIR}/global_settings"
 
 git_ignore="${global_settings}/.gitignore"
+if [ -e "${git_ignore}.${option}" ]; then
+  git_ignore="${git_ignore}.${option}"
+fi
 git config --global core.excludesFile ${git_ignore}
 
 git_message="${global_settings}/.gitmessage"
