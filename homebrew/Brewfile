@@ -25,5 +25,7 @@ cask "amorphousdiskmark"
 cask "aws-valut"
 cask "joplin"
 cask "direnv"
+cask "keepassxc"
+
 
 brew "youtube-dl"
