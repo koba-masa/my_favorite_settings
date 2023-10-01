@@ -11,6 +11,7 @@ mas "1Password 7", id: 1333542190
 mas "CotEditor", id: 1024640650
 mas "Slack", id: 803453959
 mas "Magnet", id: 441258766
+mas "AS Timer", id: 512464723
 
 cask "docker"
 cask "karabiner-elements"
