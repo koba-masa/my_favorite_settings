@@ -4,7 +4,6 @@ tap "homebrew/core"
 
 brew "mas"
 
-brew "git"
 brew "awscli"
 
 mas "1Password 7", id: 1333542190
