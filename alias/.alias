@@ -8,6 +8,7 @@ alias history='history -E 1'
 ## Git
 alias gl="git log --date='format-local:%Y/%m/%d %H:%M:%S' --pretty='format:%C(yellow)%H %C(green)%cd %C(reset)%s %C(red)%d'"
 alias gla="git log --date='format-local:%Y/%m/%d %H:%M:%S' --pretty='format:%C(yellow)%H %C(green)%ad %C(reset)%s %C(red)%d'"
+alias gs="git status"
 alias help_rebase_onto='echo rebase --onto どこへ どこから どのブランチを'
 
 ## AWS
