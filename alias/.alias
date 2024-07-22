@@ -15,7 +15,7 @@ alias help_rebase_onto='echo rebase --onto どこへ どこから どのブラ�
 alias awsconf='cat ~/.aws/config | grep profile'
 
 ## Docker
-alias dc='docker-compose'
-alias dcm='docker-compose -f compose.yml -f compose.mine.yml'
-alias dcrun='docker-compose run --rm'
-alias dcexec='docker-compose exec'
+alias dc='docker compose'
+alias dcm='docker compose -f compose.yml -f compose.mine.yml'
+alias dcrun='docker compose run --rm'
+alias dcexec='docker compose exec'
