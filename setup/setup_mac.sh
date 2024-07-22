@@ -1,7 +1,22 @@
 #!/bin/sh
 
+function backup() {
+  local backup_dir=$1
+  local file_prefix=$2
+
+  defaults read > "${backup_dir}/${file_prefix}.json"
+}
+
+# 事前バックアップを取得する
+now_date=`date +%Y%m%d_%H%M%S`
+backup_dir="setup/backup_defaults_${now_date}"
+if [ ! -d "${backup_dir}" ]; then
+  mkdir -p "${backup_dir}"
+fi
+backup "${backup_dir}" "before"
+
 # スクリーンショットの保存場所を変更する
-dest_dir="~/Pictures/00.Screenshots"
+dest_dir="${HOME}/Pictures/00.Screenshots"
 if [ ! -d "${dest_dir}" ]; then
   mkdir -p "${dest_dir}"
 fi
@@ -15,5 +30,8 @@ defaults write com.apple.spaces spans-displays 1
 
 # スクロールの方向を変更する
 defaults write NSGlobalDomain com.apple.swipescrolldirection 0
+
+# 事後バックアップを取得する
+backup "${backup_dir}" "after"
 
 echo "再起動してください"

@@ -3,3 +3,4 @@ git/global_settings/.gitmessage.*
 git/global_settings/.gitignore.*
 alias/.alias.*
 homebrew/Brewfile.lock.json
+setup/backup_defaults_*
