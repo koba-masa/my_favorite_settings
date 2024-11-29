@@ -2,12 +2,16 @@
 
 BASE_DIR=`dirname ${0}`
 
+cd ${BASE_DIR}
+
+FILE_DIR=`pwd`
+
 option=""
 if [ $# -ne 0 ]; then
   option="${1}"
 fi
 
-global_settings="${BASE_DIR}/global_settings"
+global_settings="${FILE_DIR}/global_settings"
 
 git_ignore="${global_settings}/.gitignore"
 if [ -e "${git_ignore}.${option}" ]; then
@@ -21,3 +25,5 @@ if [ -e "${git_message}.${option}" ]; then
 fi
 git config --global commit.template ${git_message}
 
+cd ${BASE_DIR}
+cat ~/.gitconfig
