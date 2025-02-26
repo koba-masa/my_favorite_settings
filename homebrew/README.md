@@ -4,5 +4,5 @@
 
 ## 実行方法
 ```sh
-brew bundle --file homebrew/Brewfile
+brew bundle --file Brewfile
 ```
