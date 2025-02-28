@@ -1,4 +1,6 @@
 .DS_store
 MY_README.md
+*.mine.*
 .tours
 .devcontainer.json
+for_automerge.sh
